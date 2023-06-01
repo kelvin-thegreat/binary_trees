@@ -100,4 +100,10 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree);
 int is_perfect_recursive(const binary_tree_t *tree,
 		size_t leaf_depth, size_t level);
 int binary_tree_is_perfect(const binary_tree_t *tree);
+
+bst_t *inorder_successor(bst_t *root);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+bst_t *bst_remove(bst_t *root, int value);
+
 #endif /* B_TREES_H */
